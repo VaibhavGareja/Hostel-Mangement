@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="Gallery.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Hosteller</title>
+  </head>
+  <body >
+    <nav class="bg-purple-500 flex justify-between">
+      <h1 class="px-10 py-4 font-bold text-3xl text-white cursor-pointer">
+        Hosteller
+      </h1>
+      <ul
+        class="inline-flex justify-end px-2 py-4 space-x-4 pr-14 text-white text-lg cursor-pointer"
+      >
+        <li class="link link-underline link-underline-black">Home</li>
+        <li class="link link-underline link-underline-black">Service</li>
+        <li class="link link-underline link-underline-black">Gallary</li>
+        <li class="link link-underline link-underline-black">About-Us</li>
+        <button class="bg-purple-900 rounded-md px-2 hover:bg-purple-700">
+          Login
+        </button>
+      </ul>
+    </nav>
+    <!-- hero -->
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+  
+        <div class="swiper-slide flex justify-center items-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)),  url(/src/bed1.jpg);">
+          <div class="text">
+            <h6 data-aos="fade-right">WELCOME TO VISIT HOSTEL</h6>
+            <h1 data-aos="fade-left">A SPECIAL PLACE WHERE<br>YOU CAN STAY AND RELAX</h1>
+            <button data-aos="fade-right">SIGN IN</button>
+          </div>
+  
+        </div>
+  
+        <div class="swiper-slide flex justify-center items-center" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)),  url(/src/bed2.jpg);">
+          <div class="text">
+            <h6 data-aos="fade-right">SERVING TRAVELERS ON A BUDGET</h6>
+            <h1 data-aos="fade-left">WE PROVIDE COMFORTABLE<br>ACCOMMODATION FOR YOU</h1>
+            <button data-aos="fade-right">SIGN IN</button>
+          </div>
+        </div>
+  
+        <div class="swiper-slide flex justify-center items-center" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)),  url(/src/bed3.jpg);">
+          <div class="text">
+            <h6 data-aos="fade-right">A PERFECT AND AFFORDABLE PLACE TO STAY</h6>
+            <h1 data-aos="fade-left">TAKE ADVATAGE OF THE BUDGET<br>ORIENTED ACCOMMODATION</h1>
+            <button data-aos="fade-right">SIGN IN</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    </div>
+  
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+  
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 4500,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  
+    <!-- --------------------------------  END  ------------------------------------------- -->
+  
+
+    <!-- featuring -->
+    <section class="features" >
+      <h1 class="text-4xl flex justify-center items-center pt-16" data-aos="zoom-in">What We Offer</h1>
+      <div class="grid grid-cols-4 gap-20 p-24 h-screen ">
+        <div class="bg-white-300 flex justify-center items-center shadow-lg dark:bg-neutral-700 dark:shadow-black/30" data-aos="fade-right">
+          <div class=" text-center p-5">
+            <img class="pl-24" src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/64/7950F2/external-tea-cup-bedroom-nawicon-detailed-outline-nawicon.png"/>
+            <h1 class="text-xl py-2">Tea and Coffee </h1>
+            <!-- <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="62px" viewBox="0 0 60 62" enable-background="new 0 0 60 62" xml:space="preserve">
+            <g >
+              <polygon points="56.507,46.973 28.507,60.306 1.97,44.639 3.433,15.639 31.433,2.306 57.97,17.973" style="fill:white;stroke:grey;stroke-width:2"></polygon >
+            </g>
+            </svg> -->
+            <p >You can always have some hot coffee & tea in our kitchen, available to all our clients.</p>
+          </div>
+        </div>
+        <div class="bg-white-300 flex justify-center items-center shadow-lg dark:bg-neutral-700 dark:shadow-black/30" data-aos="fade-right">
+          <div class=" text-center p-5 justify-center items-center">
+            <img class="pl-24" src="https://img.icons8.com/ios/50/7950F2/shower.png"/>
+            <h1 class="text-xl py-2">Hot Shower </h1>
+            <p>Visit Hostel is famous for clean and hot showers that you can have at any time of the day.</p>
+          </div>
+        </div>
+        <div class="bg-white-300 flex justify-center items-center shadow-lg dark:bg-neutral-700 dark:shadow-black/30" data-aos="fade-left">
+          <div class=" text-center p-5 justify-center items-center">
+            <img class="pl-20" src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/7950F2/external-washing-machine-bathroom-kiranshastry-lineal-kiranshastry.png"/>
+            <h1 class="text-xl py-2">Laundry</h1>
+            <p>Need to quickly wash your clothes? Our laundry is always at your service.</p>
+          </div>
+        </div>
+        <div class="bg-white-300 flex justify-center items-center shadow-lg dark:bg-neutral-700 dark:shadow-black/30" data-aos="fade-left">
+          <div class=" text-center p-5 justify-center items-center">
+            <img class="pl-24" src="https://img.icons8.com/ios/50/7950F2/air-conditioner.png"/>
+            <h1 class="text-xl py-2">Air Conditioner</h1>
+            <p>All rooms at our hostel are equipped with reliable air conditioner systems.</p>
+          </div>
+        </div>
+        <div class="bg-white-300 flex justify-center items-center shadow-lg dark:bg-neutral-700 dark:shadow-black/30" data-aos="fade-right">
+          <div class=" text-center p-5 justify-center items-center">
+            <img class="pl-24" src="https://img.icons8.com/windows/32/7950F2/wifi--v1.png"/>
+            <h1 class="text-xl py-2">Free Wi-Fi</h1>
+            <p>Our hostel is equipped with free high-speed Wi-Fi that is available 24/7 in all rooms.</p>
+          </div>
+        </div>
+        <div class="bg-white-300 flex justify-center items-center shadow-lg dark:bg-neutral-700 dark:shadow-black/30" data-aos="fade-right">
+          <div class=" text-center p-5 justify-center items-center">
+            <img class="pl-20" src="https://img.icons8.com/dotty/80/7950F2/kitchen-room.png"/>
+            <h1 class="text-xl py-2">Kitchen</h1>
+            <p>Our kitchen provides a wide range of daily fresh and tasty meals to our clients.</p>
+          </div>
+        </div>
+        <div class="bg-white-300 flex justify-center items-center shadow-lg dark:bg-neutral-700 dark:shadow-black/30" data-aos="fade-left">
+          <div class=" text-center p-5 justify-center items-center">
+            <img class="pl-20" src="https://img.icons8.com/ios/50/7950F2/iron.png"/>
+            <h1 class="text-xl py-2">Ironing</h1>
+            <p>Use our ironing services to quickly made your clothes look splendid after laundry.</p>
+          </div>
+        </div>
+        <div class="bg-white-300 flex justify-center items-center shadow-lg dark:bg-neutral-700 dark:shadow-black/30" data-aos="fade-left">
+          <div class=" text-center p-5 justify-center items-center">
+            <img class="pl-20" src="https://img.icons8.com/external-sbts2018-outline-sbts2018/58/7950F2/external-37-airport-locker-airport-service-sbts2018-outline-sbts2018.png"/>
+            <h1 class="text-xl py-2">Lockers</h1>
+            <p>If you carry any valuable items, feel free to store them in our hostel’s lockers.</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- gallary -->
+  <input type="radio" name="Photos" id="Check1" checked>
+ <input type="radio" name="Photos" id="Check2">
+ <input type="radio" name="Photos" id="Check3">
+ <input type="radio" name="Photos" id="Check4">   
+
+<div class="container">
+    <h1 class="text-3xl pb-10 " data-aos="zoom-in">OUR PHOTO GALLERY</h1>
+    <div class="top-content flex justify-center items-center bg-purple-500">
+        
+        <label for="Check1" class="link link-underline link-underline-black">All Photos</label>
+        <label for="Check2" class="link link-underline link-underline-black">Campus</label>
+        <label for="Check3" class="link link-underline link-underline-black">InDoors</label>
+        <label for="Check4" class="link link-underline link-underline-black">OutDoors</label>
+
+    </div>
+
+    <div class="photo-gallery" data-aos="fade-right">
+        <div class="pic Campus" >
+            <img src="/src/Campus1.jpg">
+        </div>
+        <div class="pic InDoors">
+            <img src="/src/InDoors1.jpg">
+        </div>
+        <div class="pic OutDoors">
+            <img src="/src/OutDoors1.jpg">
+        </div>
+
+        <div class="pic Campus">
+            <img src="/src/Campus2.jpg">
+        </div>
+        <div class="pic InDoors">
+            <img src="/src/Indoors2.jpg">
+        </div>
+        <div class="pic OutDoors">
+            <img src="/src/OutDoors2.jpg">
+        </div>
+        
+        <div class="pic Campus">
+            <img src="/src/Campus3.jpg">
+        </div>
+        <div class="pic InDoors">
+            <img src="/src/InDoors3.jpg">
+        </div>
+       
+        
+   
+    </div>
+
+</div>
+    <!-- about us -->
+    <div class="flex space-x-10">
+      <div class="w-screen text-center pl-20 pt-48" data-aos="fade-right">
+        <h1 class="text-3xl font-extrabold">About Us</h1>
+        <br />
+        <p class="text-lg">
+          We, Goodstay Hostels, located in Malad West, Mumbai, Maharashtra offer
+          a pocket friendly stay to each patron and welcome them with complete
+          warmth and hospitality. We offer an array of all essential services
+          that are rendered by the hostel for a hassle free stay at no extra
+          costs. For accommodation, the property offers spacious, airy and
+          well-lit rooms, featuring sophisticated and welcoming ambience with
+          the warmth and comfort of home. We take utmost care of the safety and
+          security of individuals and their belongings staying in our hostel.
+        </p>
+      </div>
+      <div class="justify-center" data-aos="fade-left">
+        <img
+          src="https://image3.jdomni.in/banner/27102020/7A/F0/A8/D3DB8935AFA47F78B4A6EA6466_1603779467341.png?output-format=webp"
+          alt=""
+          class="pr-20"
+        />
+      </div>
+    </div>
+
+    <!-- testinomials -->
+    <section class="text-neutral-700 dark:text-neutral-300 mx-20 my-10 ">
+      <div class="mx-auto text-center md:max-w-xl lg:max-w-3xl" >
+        <h3 class="mb-6 text-3xl font-bold" data-aos="fade-up">Testimonials</h3>
+        <p class="mb-6 pb-2 md:mb-12 md:pb-0" data-aos="fade-down">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error
+          amet numquam iure provident voluptate esse quasi, veritatis totam
+          voluptas nostrum quisquam eum porro a pariatur veniam.
+        </p>
+      </div>
+
+      <div class="grid gap-3 text-center md:grid-cols-3 " >
+        <div class="flex justify-center items-center">
+          <div
+            class="block rounded-lg bg-white shadow-lg dark:bg-neutral-700 dark:shadow-black/30 w-8/12" data-aos="fade-right" 
+          >
+            <div class="h-28 overflow-hidden rounded-t-lg bg-[#9d789b]"></div>
+            <div
+              class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800"
+            >
+              <img
+                src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+              />
+            </div>
+            <div class="p-6">
+              <h4 class="mb-4 text-2xl font-semibold">Maria Smantha</h4>
+              <hr />
+              <p class="mt-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="inline-block h-7 w-7 pr-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z"
+                  />
+                </svg>
+                Lorem ipsum dolor sit amet eos adipisci, consectetur adipisicing
+                elit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="block rounded-lg bg-white shadow-lg dark:bg-neutral-700 dark:shadow-black/30 w-8/12" data-aos="fade-down"
+          >
+            <div class="h-28 overflow-hidden rounded-t-lg bg-[#7a81a8]"></div>
+            <div
+              class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800"
+            >
+              <img
+                src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+              />
+            </div>
+            <div class="p-6">
+              <h4 class="mb-4 text-2xl font-semibold">Lisa Cudrow</h4>
+              <hr />
+              <p class="mt-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="inline-block h-7 w-7 pr-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z"
+                  />
+                </svg>
+                Neque cupiditate assumenda in maiores repudi mollitia
+                architecto.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div >
+          <div
+            class="block rounded-lg bg-white shadow-lg dark:bg-neutral-700 dark:shadow-black/30 w-8/12" data-aos="fade-left"
+          >
+            <div class="h-28 overflow-hidden rounded-t-lg bg-[#6d5b98]"></div>
+            <div
+              class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800"
+            >
+              <img
+                src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+              />
+            </div>
+            <div class="p-6">
+              <h4 class="mb-4 text-2xl font-semibold">John Smith</h4>
+              <hr />
+              <p class="mt-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="inline-block h-7 w-7 pr-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z"
+                  />
+                </svg>
+                Delectus impedit saepe officiis ab aliquam repellat rem unde
+                ducimus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-black">
+      <div>
+        <div>
+          <div>
+            <div class="flex space-x-10 p-6">
+              <div class="w-1/3">
+                <h1 class="text-white">Hostel</h1>
+                <br />
+                <span class="text-white"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  vitae accusantium ipsum labore! Perferendis accusamus cum
+                  facilis obcaecati ducimus beatae impedit? Quaerat quasi
+                  molestias quos provident, fugiat, blanditiis rerum, modi
+                  aperiam explicabo tempora quisquam.</span
+                >
+              </div>
+              <div class="text-white w-1/4">
+                <h1>Quick Links</h1>
+                <br />
+                <ul>
+                  <li>Home</li>
+                  <li>Service</li>
+                  <li>about us</li>
+                  <li>notice board</li>
+                </ul>
+              </div>
+              <div class="text-white w-1/4">
+                <h1>Contect us</h1>
+                <br />
+                <span
+                  >54826 Fadel Circles <br />
+                  Darrylstad, AZ 90995</span
+                >
+                <br />
+                <span
+                  >(329) 580-7077 <br />
+                  (650) 382-5020</span
+                >
+              </div>
+              <div class="text-white w-1/4">
+                <h1>Follow US</h1>
+                <br />
+                <span>Venenatis urna cursus eget nunc scelerisque</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container p-6 text-white">
+        <div class="">
+          <p class="flex items-center justify-center">
+            <span class="mr-4">Register for free</span>
+            <button
+              type="button"
+              class="inline-block rounded-full border-2 border-neutral-50 px-6 pt-2 pb-[6px] text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+              data-te-ripple-init
+              data-te-ripple-color="light"
+            >
+              Sign up!
+            </button>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="w-full mx-auto max-w-sc reen-xl p-4 md:flex md:items-center md:justify-between text-white"
+      >
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2023 <a href="#" class="hover:underline">Vaibhav™</a>. All Rights
+          Reserved.
+        </span>
+        <ul
+          class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
+        >
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">About</a>
+          </li>
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        offset: 150,
+      });
+    </script>
+  </body>
+</html>
